@@ -1,2 +1,23 @@
-# CSS + HTML 
- A must habit to made to be comfortable at basic skills you need  for making a website.
+# Looking For Improvements?
+
+A must habit to made to be comfortable at basic skills you need for making a website.
+
+SCHEDULES
+
+<!-- EVERYDAY YOU MUST COMMIT ON GITHUB AND S.O -->
+
+MONDAY = GITHUB, STACKOVERFLOW, ANOTHER COMMUNITIES PLATFORM
+TUESDAY = HEADER CSS HTML AND FUNCTIONS
+WEDNESDAY = MAIN CSS HTML AND FUNCTIONS
+THURSDAY = FOOTER CSS HTML AND FUNCTIONS
+FRIDAY = HEADER CSS HTML AND FUNCTIONS
+SATURDAY = MAIN CSS HTML AND FUNCTIONS
+SUNDAY = HEADER CSS HTML AND FUNCTIONS
+
+<!-- GOAL -->
+
+COMPILE 1 PROJECT OR MORE PER DAY
+
+<!-- BREAKS  -->
+
+BREAKS = READ BOOKS, OR WATTPAD
