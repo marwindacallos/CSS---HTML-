@@ -140,7 +140,7 @@ img {
   padding-top: 4rem;
   text-align: start;
   background-color: var(--first-color-dark);
-  transition: 0.4s;
+  transition: all 0.4s;
  }
  .nav__item,
  .download__resume {
@@ -168,7 +168,7 @@ img {
   width: 60%;
   padding-top: 4rem;
   text-align: start;
-  transition: 0.4s;
+  transition: all 0.4s;
   background-color: var(--first-color-dark);
  }
  .project__item {
@@ -178,6 +178,15 @@ img {
   position: fixed;
   z-index: var(--z-fixed);
  }
+}
+.show__projects {
+ left: 0;
+}
+.show__menu {
+ right: 0;
+}
+.close__projects {
+ left: -100%;
 }
 .nav__link,
 .download__resume,
