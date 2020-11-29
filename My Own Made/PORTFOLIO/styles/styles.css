@@ -64,11 +64,16 @@ li {
  text-decoration: none;
  list-style: none;
 }
-
+/* CLASS CSS */
+html {
+ scroll-behavior: smooth;
+}
 /* HEADER */
 /* NAV ARRANGEMENTS */
 .nav_container {
  background-color: black;
+ position: fixed;
+ width: 100%;
  height: 3rem;
  display: grid;
  grid-template-columns: 2fr 1fr;
@@ -76,6 +81,7 @@ li {
  justify-content: center;
  align-items: center;
  border-bottom: 1px solid rgb(88, 88, 88);
+ z-index: 100;
 }
 /* NAV PROJECTS */
 .nav_menu_projects {
@@ -87,6 +93,17 @@ li {
  height: calc(100vh - 3rem);
  overflow-y: auto;
  transition: 0.3s;
+}
+.main_heading {
+ color: whitesmoke;
+ text-transform: uppercase;
+ transition: 0.4s;
+}
+.main_heading:hover {
+ transform: scale(1.5);
+}
+.sub_heading {
+ color: var(--first-color-light);
 }
 /* SHOW PROJECTS */
 .show_projects {
@@ -148,15 +165,15 @@ li {
  letter-spacing: 2px;
  transition: 0.4s;
 }
-.nav_links a:hover {
+.nav_links > a:hover {
  color: rgb(153, 152, 152);
 }
 /* DOWNLOAD RESUME */
 .download_resume {
  display: flex;
- flex-direction: column;
  justify-content: center;
  align-items: center;
+ text-align: center;
  background-color: rgb(74, 74, 77);
  border-radius: 10rem;
  margin: 0 10px;
@@ -205,6 +222,7 @@ li {
  justify-content: flex-end;
  /* background-color: blue; */
  position: relative;
+ right: 0;
  cursor: pointer;
 }
 
@@ -213,33 +231,127 @@ li {
  /* background-color: blue; */
  position: absolute;
  width: 22px;
- height: 15px;
- transform: translateY(-6px);
+ height: 16px;
+ transform: translateY(-7px);
  z-index: 0.1;
 }
 
-.hamburger_menu div {
+.hamburger_menu a {
  background-color: whitesmoke;
  width: 1.4rem;
  height: 0.185rem;
  position: relative;
  cursor: pointer;
 }
-.hamburger_menu div::before,
-.hamburger_menu div::after {
+.hamburger_menu a::before,
+.hamburger_menu a::after {
  content: "";
  background-color: inherit;
  position: absolute;
  width: inherit;
  height: inherit;
 }
-.hamburger_menu div::before {
+.hamburger_menu a::before {
  transform: translateY(-6px);
 }
-.hamburger_menu div::after {
+.hamburger_menu a::after {
  transform: translateY(6px);
 }
-/* CLASS CSS */
+
+/* HERO */
+.hero_container {
+ width: 100%;
+ height: calc(75vh - 3rem);
+ background-color: black;
+ padding-top: 3rem;
+}
+.hero_grid {
+ height: 100%;
+ padding: 5% 5%;
+ background-color: black;
+}
+/* SHORT INTRO */
+.short_intro {
+ color: white;
+ height: 50%;
+ /* background-color: red; */
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ text-align: center;
+ margin-bottom: 10px;
+}
+.short_intro div:not(:first-child) {
+ margin-bottom: 15px;
+}
+.name {
+ font-size: 20px;
+ text-transform: uppercase;
+ margin-bottom: 5px;
+}
+.main_text {
+ color: var(--first-color-light);
+}
+.intro_picture {
+ /* background-color: blue; */
+ background: url(./images/intro.jpg) center/cover no-repeat;
+ width: 50%;
+ height: 100%;
+}
+.intro_text {
+ width: 50%;
+ /* background-color: red; */
+}
+/* HERO VIDEO */
+.hero_video {
+ color: white;
+ height: 50%;
+ /* background-color: green; */
+ position: relative;
+}
+.video {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+}
+.what_i_do {
+ padding-top: 20px;
+ /* background-color: violet; */
+ position: absolute;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ text-transform: uppercase;
+}
+/* social icons */
+.social_icons {
+ color: white;
+ height: 10%;
+ /* background-color: blue; */
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ padding: 0 20%;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ margin-bottom: 20px;
+}
+.social_icons a {
+ color: white;
+ transition: 0.4s;
+}
+.social_icons a:hover {
+ color: var(--first-color-light);
+}
+
+/* SKILLS CONTAINER */
+.skills_container {
+ width: 100%;
+ height: 75vh;
+ background-color: wheat;
+}
+
 /* LAYOUT */
 /* HEADER */
 /* SHOW MENU */
